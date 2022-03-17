@@ -1,3 +1,4 @@
+
 //Sample for Assignment 3
 const express = require('express');
 
@@ -23,7 +24,12 @@ app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
-  });
+});
+
+//Renderes CSS in the html file
+//var path = require('path')
+//app.use(express.static(path.join(__dirname)));
+app.use(express.static("public"))
 
 //The following is an example of an array of two tunes.  Compared to assignment 2, I have shortened the content to make it readable
 let tunes = [
@@ -90,8 +96,9 @@ function deleted_object_index_fix(array, index) {
 //Endpoints
 
 // render html
-app.get('/', (req, res) => {
-    res.sendFile('home.html');
+app.get('/api/v1/', (req, res) => {
+    res.sendFile('public/html/home.html', {root: __dirname});
+
 })
 
 // 1-1
