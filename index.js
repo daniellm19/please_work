@@ -89,6 +89,11 @@ function deleted_object_index_fix(array, index) {
 
 //Endpoints
 
+// render html
+app.get('/', (req, res) => {
+    res.sendFile('home.html');
+})
+
 // 1-1
 app.get('/api/v1/tunes', (req, res) => {
     if (!req.query.sortBy) {
