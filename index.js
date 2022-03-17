@@ -29,7 +29,7 @@ app.use(function(req, res, next) {
 //Renderes CSS in the html file
 //var path = require('path')
 //app.use(express.static(path.join(__dirname)));
-app.use(express.static(__dirname + "/api"))
+app.use(express.static(__dirname + "/bruh"))
 
 //The following is an example of an array of two tunes.  Compared to assignment 2, I have shortened the content to make it readable
 let tunes = [
