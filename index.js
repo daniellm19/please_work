@@ -319,9 +319,9 @@ app.delete('/api/v1/genres/:id', (req, res) => {
         res.send(the_genre)}
 })
 
-//app.use("*", (req, res) => {
-//    res.status(405).send("Operation not supported");
-//});
+app.use("*", (req, res) => {
+    res.status(405).send("Operation not supported");
+});
 
 //Start the server
 app.listen(port, () => {
