@@ -97,7 +97,7 @@ function deleted_object_index_fix(array, index) {
 
 // render html
 app.get('/api/v1', (req, res) => {
-    res.sendFile('api/v1/home.html', {root: __dirname});
+    res.sendFile('bruh/api/v1/home.html', {root: __dirname});
 
 })
 
