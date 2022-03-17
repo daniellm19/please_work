@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3000/api/v1/';
+const BASE_URL = 'https://tunes-and-genres.herokuapp.com/public/html';
 
 let tunes = [];
 let genres = [];
