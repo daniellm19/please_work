@@ -96,7 +96,7 @@ function deleted_object_index_fix(array, index) {
 //Endpoints
 
 // render html
-app.get('/public/html/', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile('public/html/home.html', {root: __dirname});
 
 })
